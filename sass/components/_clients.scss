@@ -1,0 +1,158 @@
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.link-clients {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-clients + .link-clients {
+  margin-left: 30px;
+}
+
+.clients-list {
+  display: flex;
+  margin-top: 50px;
+}
+
+.clients-list .element-client + .element-client {
+  margin-left: 30px;
+}
+
+.text-clients {
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  color: var(--title-text-color);
+  transition-property: border-color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-clients:hover {
+  border: 1px solid var(--acent-color);
+}
+
+.link-clients:focus {
+  background-color: var(--basic-white-color);
+}
+
+.icon-yaco {
+  width: 106px;
+  height: 60px;
+  fill: var(--icon-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-clients:hover > .icon-yaco {
+  fill: var(--acent-color);
+}
+
+.link-clients:focus > .icon-yaco {
+  background-color: var(--basic-white-color);
+  fill: var(--acent-color);
+}
+
+.icon-union {
+  width: 106px;
+  height: 60px;
+  fill: var(--icon-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-clients:hover > .icon-union {
+  fill: var(--acent-color);
+}
+
+.link-clients:focus > .icon-union {
+  background-color: var(--basic-white-color);
+  fill: var(--acent-color);
+}
+
+.icon-company {
+  width: 106px;
+  height: 60px;
+  fill: var(--icon-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-clients:hover > .icon-company {
+  fill: var(--acent-color);
+}
+
+.link-clients:focus > .icon-company {
+  background-color: var(--basic-white-color);
+  fill: var(--acent-color);
+}
+
+.icon-foster-peters {
+  width: 106px;
+  height: 60px;
+  fill: var(--icon-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-clients:hover > .icon-foster-peters {
+  fill: var(--acent-color);
+}
+
+.link-clients:focus > .icon-foster-peters {
+  background-color: var(--basic-white-color);
+  fill: var(--acent-color);
+}
+
+.icon-brand {
+  width: 106px;
+  height: 60px;
+  fill: var(--icon-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-clients:hover > .icon-brand {
+  fill: var(--acent-color);
+}
+
+.link-clients:focus > .icon-brand {
+  background-color: var(--basic-white-color);
+  fill: var(--acent-color);
+}
+
+.icon-tag-line {
+  width: 106px;
+  height: 60px;
+  fill: var(--icon-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-clients:hover > .icon-tag-line {
+  fill: var(--acent-color);
+}
+
+.link-clients:focus > .icon-tag-line {
+  background-color: var(--basic-white-color);
+  fill: var(--acent-color);
+}

@@ -37,7 +37,7 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.list-nav .item + .item {
+.list-nav .item + .list-nav__item {
   margin-left: 50px;
 }
 
@@ -56,7 +56,7 @@ header {
   margin-left: auto;
 }
 
-.auth-nav .item + .item {
+.list-nav__item + .list-nav__item {
   margin-left: 50px;
 }
 
@@ -74,17 +74,14 @@ header {
 }
 
 .logo:focus {
-  background-color: var(--basic-white-color);
   color: var(--acent-color);
 }
 
-.part-dark {
-  color: #1f1f1f;
+.logo-header {
+  color: #000000;
 }
-.part-ligt {
-  color: var(--basic-white-color);
-}
-.nav-button {
+
+.list-nav-button {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -98,16 +95,16 @@ header {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-button:hover {
+.list-nav-button:hover {
   color: var(--acent-color);
   background-color: var(--basic-white-color);
 }
 
-.nav-button:focus {
+.list-nav-button:focus {
   color: var(--acent-color);
   background-color: var(--basic-white-color);
 }
-.nav-button.current {
+.list-nav-button.current {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -119,15 +116,15 @@ header {
   display: block;
 }
 
-.item .current {
+.list-nav__item .current {
   position: relative;
 }
 
-.item {
+.list-nav__item {
   position: relative;
 }
 
-.item .current::after {
+.list-nav__item .current::after {
   display: block;
   position: absolute;
   bottom: 0;

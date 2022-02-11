@@ -31,7 +31,7 @@
   width: 696px;
 }
 
-.button {
+.section-hero__button {
   display: inline-block;
   font-family: inherit;
   background-color: var(--acent-color);
@@ -45,7 +45,7 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-button:hover,
-.button:focus {
+.section-hero__button:hover,
+.section-hero__button:focus {
   background-color: #188ce8;
 }
