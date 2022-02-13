@@ -1,3 +1,9 @@
+.box-element {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
 .site-filtre {
   display: flex;
   justify-content: center;
@@ -47,10 +53,17 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.box-element {
-  display: block;
-  position: relative;
-  overflow: hidden;
+.filtre-link:hover {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.filtre-link:focus {
+  cursor: pointer;
+  background-color: var(--basic-white-color);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .previev-overlay {
@@ -82,17 +95,11 @@
   color: var(--basic-white-color);
 }
 
-.filtre-link:hover {
-  cursor: pointer;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.filtre-link:focus {
-  cursor: pointer;
-  background-color: var(--basic-white-color);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+.description {
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
 
 .products {
@@ -102,10 +109,4 @@
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   margin-bottom: 4px;
-}
-.description {
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
 }

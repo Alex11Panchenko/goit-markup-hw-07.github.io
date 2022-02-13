@@ -6,10 +6,10 @@ footer {
 
 .logo-footer {
   color: var(--basic-white-color);
-}
 
-.logo-footer:focus {
-  color: var(--primary-background-color);
+  &:focus {
+    color: var(--primary-background-color);
+  }
 }
 
 .google-link {
@@ -22,10 +22,10 @@ footer {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.google-link:focus {
-  background-color: var(--primary-background-color);
+  &:focus {
+    background-color: var(--primary-background-color);
+  }
 }
 
 .footer-link {
@@ -38,10 +38,10 @@ footer {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer-link:focus {
-  background-color: var(--primary-background-color);
+  &:focus {
+    background-color: var(--primary-background-color);
+  }
 }
 
 .address-list li {
@@ -91,14 +91,15 @@ address {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--acent-color);
+  }
 }
 
 .footer-social + .footer-social {
   margin-left: 10px;
-}
-
-.footer-social:hover {
-  background-color: var(--acent-color);
 }
 
 .footer-social > .icon-instagram {
@@ -115,10 +116,6 @@ address {
 
 .footer-social > .icon-linkedin {
   fill: var(--basic-white-color);
-}
-
-.footer-social:focus {
-  background-color: var(--acent-color);
 }
 
 .list-social {

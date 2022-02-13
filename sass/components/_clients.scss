@@ -14,6 +14,14 @@
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    border: 1px solid var(--acent-color);
+
+    &:focus {
+      background-color: var(--basic-white-color);
+    }
+  }
 }
 
 .link-clients + .link-clients {
@@ -40,13 +48,6 @@
   transition-property: border-color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.link-clients:hover {
-  border: 1px solid var(--acent-color);
-}
-
-.link-clients:focus {
-  background-color: var(--basic-white-color);
 }
 
 .icon-yaco {

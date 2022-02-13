@@ -29,7 +29,7 @@
   padding: 40px;
 }
 
-.modal-button {
+.modal__button-close {
   display: flex;
   content: "";
   width: 30px;
@@ -47,11 +47,11 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal-button:hover,
-.modal-button:focus {
-  background-color: var(--basic-white-color);
+  &:hover,
+  &:focus {
+    background-color: var(--basic-white-color);
+  }
 }
 
 .icon-close {
@@ -62,8 +62,8 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-button:hover,
-.modal-button:focus > .icon-close {
+.modal__button-close:hover,
+.modal__button-close:focus > .icon-close {
   fill: var(--acent-color);
 }
 

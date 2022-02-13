@@ -64,14 +64,11 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.link-icon:hover {
-  background-color: #2196f3;
-}
-
-.link-icon:focus {
-  background-color: var(--acent-color);
+  &:hover,
+  &:focus {
+    background-color: var(--acent-color);
+  }
 }
 
 .icon-instagram {
