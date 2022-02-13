@@ -1,0 +1,111 @@
+.site-filtre {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.site-filtre .other + .other {
+  margin-left: 8px;
+}
+
+.previev {
+  display: flex;
+  flex-wrap: wrap;
+}
+.previev-element {
+  width: 370px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.previev-element:nth-child(3n) {
+  margin-right: 0;
+}
+
+.previev-element:nth-child(n + 7) {
+  margin-bottom: 0;
+}
+
+.filtre-element {
+  padding: 20px 24px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--border-color);
+  border-bottom-width: 1px;
+  border-right-style: solid;
+  border-right-color: var(--border-color);
+  border-right-width: 1px;
+  border-left-style: solid;
+  border-left-color: var(--border-color);
+  border-left-width: 1px;
+}
+
+.filtre-link {
+  display: block;
+  position: relative;
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.box-element {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.previev-overlay {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 370px;
+  height: 294px;
+  padding: 63px 24px;
+  background-color: rgba(33, 150, 243, 0.9);
+  opacity: 0;
+  transform: translateY(100%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filtre-link:hover .previev-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.discription-overlay {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: var(--basic-white-color);
+}
+
+.filtre-link:hover {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.filtre-link:focus {
+  cursor: pointer;
+  background-color: var(--basic-white-color);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.products {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-bottom: 4px;
+}
+.description {
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
