@@ -1,38 +1,32 @@
 footer {
-  background-color: var(--primary-background-color);
+  background-color: $primary-background-color;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 .logo-footer {
-  color: var(--basic-white-color);
+  color: $basic-white-color;
 
   &:focus {
-    color: var(--primary-background-color);
+    color: $primary-background-color;
   }
 }
 
 .google-link {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--basic-white-color);
+  @include font-normal($line-height 1.71);
+  color: $basic-white-color;
   text-decoration: none;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:focus {
-    background-color: var(--primary-background-color);
+    background-color: $primary-background-color;
   }
 }
 
 .footer-link {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font-normal($line-height 1.71);
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   transition-property: background-color;
@@ -40,7 +34,7 @@ footer {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:focus {
-    background-color: var(--primary-background-color);
+    background-color: $primary-background-color;
   }
 }
 
@@ -66,12 +60,9 @@ address {
   margin-left: 70px;
 }
 .footer-text {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font-bold($font-size 14px, $line-height 1.14);
   text-transform: uppercase;
-  color: var(--basic-white-color);
+  color: $basic-white-color;
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
@@ -94,7 +85,7 @@ address {
 
   &:hover,
   &:focus {
-    background-color: var(--acent-color);
+    background-color: $acent-color;
   }
 }
 
@@ -103,19 +94,19 @@ address {
 }
 
 .footer-social > .icon-instagram {
-  fill: var(--basic-white-color);
+  fill: $basic-white-color;
 }
 
 .footer-social > .icon-twitter {
-  fill: var(--basic-white-color);
+  fill: $basic-white-color;
 }
 
 .footer-social > .icon-facebook {
-  fill: var(--basic-white-color);
+  fill: $basic-white-color;
 }
 
 .footer-social > .icon-linkedin {
-  fill: var(--basic-white-color);
+  fill: $basic-white-color;
 }
 
 .list-social {
@@ -131,13 +122,10 @@ address {
 }
 
 .subscribe-text {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font-bold($font-size 14px, $line-height 1.14);
   text-transform: uppercase;
   margin-bottom: 20px;
-  color: var(--basic-white-color);
+  color: $basic-white-color;
 }
 
 .subscribe-email {
@@ -147,16 +135,13 @@ address {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  background-color: var(--primary-background-color);
-  color: var(--basic-white-color);
+  background-color: $primary-background-color;
+  color: $basic-white-color;
 }
 
 .subscribe-email::placeholder {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: var(--transparent-color);
+  @include font-normal($line-height 1.25);
+  color: $transparent-color;
 }
 
 .button-subscribe {
@@ -167,12 +152,9 @@ address {
   height: 50px;
   margin-left: 12px;
   cursor: pointer;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  color: var(--basic-white-color);
-  background: var(--acent-color);
+  @include font-batton;
+  color: $basic-white-color;
+  background: $acent-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 0;
   border-radius: 4px;
@@ -180,5 +162,5 @@ address {
 
 .icon-send {
   margin-left: 10px;
-  fill: var(--basic-white-color);
+  fill: $basic-white-color;
 }

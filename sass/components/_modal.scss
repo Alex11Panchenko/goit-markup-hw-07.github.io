@@ -19,7 +19,7 @@
   position: absolute;
   width: 528px;
   height: 581px;
-  background-color: var(--basic-white-color);
+  background-color: $basic-white-color;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -41,7 +41,7 @@
   position: absolute;
   top: 8px;
   right: 8px;
-  background-color: var(--basic-white-color);
+  background-color: $basic-white-color;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition-property: background-color;
@@ -50,7 +50,7 @@
 
   &:hover,
   &:focus {
-    background-color: var(--basic-white-color);
+    background-color: $basic-white-color;
   }
 }
 
@@ -64,7 +64,7 @@
 
 .modal__button-close:hover,
 .modal__button-close:focus > .icon-close {
-  fill: var(--acent-color);
+  fill: $acent-color;
 }
 
 .modal-title {
@@ -73,7 +73,7 @@
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--title-text-color);
+  color: $title-text-color;
   margin-top: 2px;
   margin-bottom: 12px;
 }
@@ -91,11 +91,11 @@
 }
 
 .form-input:focus {
-  border-color: var(--acent-color);
+  border-color: $acent-color;
 }
 
 .form-input:focus + .input-icon {
-  fill: var(--acent-color);
+  fill: $acent-color;
 }
 
 .coment-input {
@@ -107,20 +107,14 @@
 }
 
 .input-feedback::placeholder {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
+  @include font-input;
   color: rgba(117, 117, 117, 0.5);
 }
 
 .input-text {
   display: block;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: var(--primary-text-color);
+  @include font-input;
+  color: $primary-text-color;
   margin-bottom: 4px;
 }
 
@@ -139,7 +133,7 @@
 }
 
 .input-feedback:focus {
-  border-color: var(--acent-color);
+  border-color: $acent-color;
 }
 
 .input-policy {
@@ -161,7 +155,7 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 }
 
 .policy-text span {
@@ -171,7 +165,7 @@
   margin-right: 7px;
   width: 16px;
   height: 15px;
-  border: 2px solid #000000;
+  border: 2px solid $black-color;
   border-radius: 2px;
 }
 
@@ -181,22 +175,19 @@
 
 .policy-check:checked + .policy-text span {
   border: 0;
-  background-color: var(--acent-color);
+  background-color: $acent-color;
   transition-property: background-color, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .policy-check:checked + .policy-text .policy-icon {
-  fill: var(--basic-white-color);
+  fill: $basic-white-color;
 }
 
 .conditions {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--acent-color);
+  @include font-normal($font-size 14px, $line-height 1.71);
+  color: $acent-color;
 }
 
 .box-send {
@@ -208,13 +199,10 @@
 .button-send {
   width: 200px;
   height: 50px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
+  @include font-batton;
   border: 0;
-  color: var(--basic-white-color);
-  background: var(--acent-color);
+  color: $basic-white-color;
+  background: $acent-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   transition-property: background-color;

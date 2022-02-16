@@ -1,0 +1,34 @@
+@mixin font-bold($font-weight, $font-size, $line-height, $letter-spacing) {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+
+@mixin font-normal($font-weight, $font-size, $line-height, $letter-spacing) {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+@mixin font-header($font-weight, $font-size, $line-height, $letter-spacing) {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+@mixin font-batton($font-weight, $font-size, $line-height, $letter-spacing) {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
+@mixin font-input($font-weight, $font-size, $line-height, $letter-spacing) {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}

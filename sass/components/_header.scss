@@ -5,7 +5,7 @@
 
 header {
   border-bottom-style: solid;
-  border-bottom-color: var(--border-color);
+  border-bottom-color: $border-color;
   border-bottom-width: 1px;
 }
 
@@ -20,7 +20,7 @@ header {
 .icon-tell {
   width: 16px;
   height: 12px;
-  fill: var(--primary-text-color);
+  fill: $primary-text-color;
   margin-right: 10px;
   transition-property: fill;
   transition-duration: 250ms;
@@ -30,7 +30,7 @@ header {
 .icon-mail {
   width: 16px;
   height: 12px;
-  fill: var(--primary-text-color);
+  fill: $primary-text-color;
   margin-right: 10px;
   transition-property: fill;
   transition-duration: 250ms;
@@ -38,10 +38,6 @@ header {
 }
 
 .list-nav .item + .list-nav__item {
-  margin-left: 50px;
-}
-
-.auth-nav .nav-item + .nav-item {
   margin-left: 50px;
 }
 
@@ -54,10 +50,10 @@ header {
 .auth-nav {
   display: flex;
   margin-left: auto;
-}
 
-.list-nav__item + .list-nav__item {
-  margin-left: 50px;
+  & .nav-item + .nav-item {
+    margin-left: 50px;
+  }
 }
 
 .logo {
@@ -67,50 +63,41 @@ header {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: var(--acent-color);
+  color: $acent-color;
   transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo:focus {
-  color: var(--acent-color);
+  color: $acent-color;
 }
 
 .logo-header {
-  color: #000000;
+  color: $black-color;
 }
 
-.list-nav-button {
+.list-nav__button {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font-header;
   text-decoration: none;
-  color: var(--title-text-color);
+  color: $title-text-color;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.list-nav-button:hover {
-  color: var(--acent-color);
-  background-color: var(--basic-white-color);
-}
 
-.list-nav-button:focus {
-  color: var(--acent-color);
-  background-color: var(--basic-white-color);
+  &:hover,
+  &:focus {
+    color: $acent-color;
+    background-color: $basic-white-color;
+  }
 }
-.list-nav-button.current {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+.list-nav__button .current {
+  @include font-header;
   text-decoration: none;
-  color: var(--acent-color);
+  color: $acent-color;
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
@@ -122,6 +109,10 @@ header {
 
 .list-nav__item {
   position: relative;
+
+  & + & {
+    margin-left: 50px;
+  }
 }
 
 .list-nav__item .current::after {
@@ -131,7 +122,7 @@ header {
   content: "";
   width: 100%;
   height: 4px;
-  background-color: var(--acent-color);
+  background-color: $acent-color;
   border-radius: 2px;
 }
 
@@ -143,33 +134,33 @@ header {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.header-link:hover {
-  color: var(--acent-color);
-}
+  &:hover {
+    color: $acent-color;
+  }
 
-.header-link:focus {
-  color: var(--acent-color);
-  background-color: var(--basic-white-color);
+  &:focus {
+    color: $acent-color;
+    background-color: $basic-white-color;
+  }
 }
 
 .header-link:hover > .icon-tell {
-  fill: var(--acent-color);
+  fill: $acent-color;
 }
 
 .header-link:hover > .icon-mail {
-  fill: var(--acent-color);
+  fill: $acent-color;
 }
 
 .header-link:focus > .icon-tell {
-  fill: var(--acent-color);
+  fill: $acent-color;
 }
 
 .header-link:focus > .icon-mail {
-  fill: var(--acent-color);
+  fill: $acent-color;
 }

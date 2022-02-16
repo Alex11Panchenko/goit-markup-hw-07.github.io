@@ -1,8 +1,8 @@
 .filtre-button {
   font-family: inherit;
-  background-color: var(--filtres-color);
+  background-color: $filtres-color;
   cursor: pointer;
-  background: var(--filtres-color);
+  background: $filtres-color;
   padding: 6px 22px;
   border: none;
   border-radius: 4px;
@@ -12,15 +12,15 @@
 
   &:hover,
   &:focus {
-    color: var(--basic-white-color);
-    background-color: var(--acent-color);
+    color: $basic-white-color;
+    background-color: $acent-color;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 }
 .pointer {
-  color: var(--basic-white-color);
-  background-color: var(--acent-color);
+  color: $basic-white-color;
+  background-color: $acent-color;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
